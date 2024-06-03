@@ -1,0 +1,9 @@
+everyworkout:
+  label: everyworkout
+  permalink: /everyworkout
+  description: Everyworkout tag description
+
+release-note:
+  label: 更新履歴
+  permalink: /release-note
+  description: Release note tag description
