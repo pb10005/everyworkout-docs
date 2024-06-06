@@ -4,14 +4,14 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  imgPath: string;
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
     title: 'トレーニーのためのUI',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    imgPath: '/img/ui.png',
     description: (
       <>
         ジムで使うことを想定した画面機能や、累計ボリュームの計算・可視化などの機能を備えています。
@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '習慣化のエッセンス',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    imgPath: '/img/custom.png',
     description: (
       <>
         EVERYWORKOUTは習慣化のエッセンスを取り入れた機能を備えています。
@@ -29,7 +29,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'オープンソース',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    imgPath: '/img/oss.png',
     description: (
       <>
         EVERYWORKOUTはオープンソースです。誰でも開発に参加できます。
@@ -38,11 +38,11 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, imgPath, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img className={styles.image} src={imgPath}/>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

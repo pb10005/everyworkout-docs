@@ -5,5 +5,3 @@ sidebar_position: 2
 # グラフ
 
 トレーニング履歴をグラフ形式で形式で確認することができます。
-
-## Configure i18n
