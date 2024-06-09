@@ -1,6 +1,10 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# 日別グラフ
+# トレーニング詳細
 
+トレーニング
+
+## 
+![トレーニング詳細](../assets/workout-detail.png)
